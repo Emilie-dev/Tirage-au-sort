@@ -5,6 +5,8 @@ var tables = [0, 1, 2, 3, 4];
 var idTables = 0;
 
 
+
+$("#execute").click(function () {
 // On mélange le tableau de personnes
 
 //shuffle();
@@ -32,22 +34,20 @@ for (var i = 0; i < person.length; i++) {
 }
 
 
-/*
+});
 
-$("#execute").click(function () {
-	console.log("person.length: ",person.length);
+	/*console.log(person.length);
 	for (var i = 0; i < person.length; i++) {
 
 var tirage = Math.floor(Math.random() * (person.length));
 //console.log(tirage);
 
 	}
-
-
-
-});
-
 */
+
+
+
+
 
 
 
