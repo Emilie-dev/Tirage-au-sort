@@ -1,38 +1,53 @@
 var person = ["Julien", "Dimitri", "Marco", "Raphael", "Mouad", "Jordy", "Maxime", "Romain", "Océane", "Morel", "Grégory", "Frank", "Florian", "Elodie", "Emilie"];
-console.log(person);
+
+var tables = [0, 1, 2, 3, 4];
+
+var idTables = 0;
 
 
-var table_1 = [];
+// On mélange le tableau de personnes
 
-var table_2 = [];
+//shuffle();
+function shuffle(person) {
+    var j, x, i;
+    for (i = person.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        x = person[i - 1];
+        person[i - 1] = person[j];
+        person[j] = x;
+    }
+}
 
-var table_3 = [];
 
-var table_4 = [];
+// On affiche chaque personne en lui attribuant 0, puis 1, puis 2... jusqu'à 4
 
-var table_5 = []; 
+for (var i = 0; i < person.length; i++) {
+	var a = person[i];
+	console.log(a + " est à la table " + idTables);
+	if (idTables >= 4) {
+		idTables = 0;
+	}else {
+		idTables++;
+	}
+}
 
 
+/*
 
 $("#execute").click(function () {
-for (i = 0; i < person.length; i++) {
-	min = Math.ceil(0);
-  	max = Math.floor(14);
+	console.log("person.length: ",person.length);
+	for (var i = 0; i < person.length; i++) {
 
-var tirage = Math.floor(Math.random() * (max - min +1)) + min;
-console.log(tirage);
+var tirage = Math.floor(Math.random() * (person.length));
+//console.log(tirage);
 
-
-
-}
+	}
 
 
 
 });
 
-
-
-
+*/
 
 
 
