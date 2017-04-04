@@ -5,11 +5,11 @@ var tables = [0, 1, 2, 3, 4];
 var idTables = 0;
 
 
+$("#execute").click(function() {
 
-$("#execute").click(function () {
 // On mélange le tableau de personnes
 
-//shuffle();
+//avec shuffle();
 function shuffle(person) {
     var j, x, i;
     for (i = person.length; i; i--) {
@@ -20,9 +20,11 @@ function shuffle(person) {
     }
 }
 
+// On stock le résultat du tirage au sort dans une nouvelle variable
+var tirage = shuffle(person); 
+
 
 // On affiche chaque personne en lui attribuant 0, puis 1, puis 2... jusqu'à 4
-
 for (var i = 0; i < person.length; i++) {
 	var a = person[i];
 	console.log(a + " est à la table " + idTables);
@@ -34,16 +36,16 @@ for (var i = 0; i < person.length; i++) {
 }
 
 
+$("#content").html();
+
 });
 
-	/*console.log(person.length);
-	for (var i = 0; i < person.length; i++) {
 
-var tirage = Math.floor(Math.random() * (person.length));
-//console.log(tirage);
 
-	}
-*/
+
+
+
+
 
 
 
