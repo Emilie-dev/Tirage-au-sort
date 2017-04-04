@@ -36,7 +36,6 @@ for (var i = 0; i < person.length; i++) {
 }
 
 
-$("#content").html();
 
 });
 

@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 	<title>Tirage au sort</title>
 </head>
 <body>
-<h1>Tirage au sort</h1>
+	<h1>Composition des groupes</h1>
 
+	<button id="execute" type="button" class="btn btn-primary">Executer</button>
 
-
-<table id="liste" class="table table-striped">
+	<table id="liste" class="table table-striped">
+	<caption class="text">Tirage au sort</caption>
 			<thead>
 				<tr>
 					<th>N°</th>
 					<th>Nom</th>
 				</tr>
 			</thead>
-			<tbody>
-							
-			</tbody
+			<tbody class="content">
+			</tbody>
+	</table>
 
-</table>
-
-<button id="execute"type="button" class="btn btn-primary">Executer</button>
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>

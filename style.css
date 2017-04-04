@@ -1,4 +1,15 @@
-.h1 {
+h1 {
 	text-align: center;
+	color: darkblue;
+	font-family: Verdana;
+	margin-bottom: 2%;
+
+}
+
+.text {
+	text-align: center;
+	color: black;
+	font-family: Arial;
+
 }
 
